@@ -1,14 +1,8 @@
-header {
-  background-image: url("./Seventeen pictures/svt_grp.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-shadow: 2px 2px 8px black;
+h1 {
+    color: #f7cac9f5;
+    font-weight: 600;
+    font-size: 100px;
+
 }
 
 nav a {
@@ -20,4 +14,21 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+}
+
+header {
+    background-color: #f7cac9;
+     background-image: url("./Seventeen pictures/svt_grp.jpeg");
+  background-size: cover;
+  background-position: bottom;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 8px black;
+}
+body {
+    background-color:#92a8d1;
 }
