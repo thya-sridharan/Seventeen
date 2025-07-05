@@ -94,7 +94,7 @@ p {
   grid-template-columns: repeat(3, 1fr); /* 3 per row */
   gap: 0px;
   justify-content: start;
-  align-items: center;
+  align-items: right;
 }
 
 .image-grid img {
@@ -109,7 +109,6 @@ p {
   overflow: hidden;
   border-radius: 10px;
 }
-
 
 
 
