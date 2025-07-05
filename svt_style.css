@@ -7,11 +7,60 @@ h1 {
 
 nav a {
   margin: 0 15px;
+  position: relative;
   text-decoration: none;
-  color: white;
+  color: green;
   font-weight: bold;
 }
 
+nav a:hover {
+  text-decoration: underline;
+  color:#f7cac9
+}
+
+/* Container for the dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Hide the dropdown by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #92a8d1;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+  color: #f7cac9;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style the nav bar */
+nav {
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration:wavy ;
+  color: #f7cac9;
+  font-weight: bold;
+}
+
+/* hover effect */
 nav a:hover {
   text-decoration: underline;
 }
@@ -28,7 +77,62 @@ header {
   justify-content: center;
   color: white;
   text-shadow: 2px 2px 8px black;
+  font-family: cursive;
 }
+
 body {
     background-color:#92a8d1;
+}
+
+p {
+    font-size: large;
+    text-align: center;
+}
+/* individual member grid*/
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 per row */
+  gap: 0px;
+  justify-content: start;
+  align-items: center;
+}
+
+.image-grid img {
+  width: 100%;
+  max-width: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.member {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+
+
+
+/* Hidden hover overlay */
+.info-box {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  max-width: 300px;
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Show on hover */
+.member:hover .info-box {
+  opacity: .8;
 }
