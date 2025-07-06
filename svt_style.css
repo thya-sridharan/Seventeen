@@ -2,6 +2,7 @@ h1 {
     color: #f7cac9f5;
     font-weight: 600;
     font-size: 100px;
+    align-items: center;
 
 }
 
@@ -11,6 +12,7 @@ nav a {
   text-decoration: none;
   color: green;
   font-weight: bold;
+  margin-bottom: 20%;
 }
 
 nav a:hover {
@@ -94,11 +96,12 @@ p {
   grid-template-columns: repeat(3, 1fr); /* 3 per row */
   gap: 0px;
   justify-content: start;
-  align-items: right;
+  align-items: center;
 }
 
 .image-grid img {
-  width: 100%;
+  width: 300px;
+  height: 300px;
   max-width: 300px;
   object-fit: cover;
   border-radius: 50%;
@@ -134,4 +137,10 @@ p {
 /* Show on hover */
 .member:hover .info-box {
   opacity: .8;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
 }
